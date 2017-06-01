@@ -26,7 +26,7 @@ public class DataJsonDeserializer {
         this.objectMapper = objectMapper;
     }
 
-    public DataJson read(String json) throws IOException {
+    public BasicDataJson read(String json) throws IOException {
         DataType type = getType(json);
 
         JavaType javaType = objectMapper.getTypeFactory().constructParametricType(

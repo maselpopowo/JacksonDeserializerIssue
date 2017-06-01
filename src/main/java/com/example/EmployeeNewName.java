@@ -8,7 +8,7 @@ public class EmployeeNewName extends CommonConcernData implements NameChangeDesc
     }
 
     @Override
-    public String getNewName() {
+    public String getName() {
         return name;
     }
 }
